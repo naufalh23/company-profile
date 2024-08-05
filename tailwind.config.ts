@@ -1,10 +1,13 @@
 import type { Config } from "tailwindcss";
+import flowbite from "flowbite-react/tailwind";
 
+/** @type {import('tailwindcss').Config} */
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    flowbite.content(),
   ],
   theme: {
     extend: {
@@ -17,6 +20,7 @@ const config: Config = {
   },
   plugins: [
     require('daisyui'),
+    flowbite.plugin(),
   ],
   daisyui: {
     themes: [], // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]
