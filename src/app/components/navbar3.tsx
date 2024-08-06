@@ -1,29 +1,8 @@
-"use client";
-
-import React, { useState, useEffect } from "react";
 import Link from "next/link";
 
-export default function Navbar() {
-  const [isSticky, setSticky] = useState(false);
-
-  const handleScroll = () => {
-    setSticky(window.scrollY > 0);
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
+export default function NavbarFirst() {
   return (
-    <nav
-      className={`navbar border-b drop-shadow-md sticky top-0 ${
-        isSticky ? "bg-white shadow" : "bg-white"
-      }`}
-    >
+    <div className="navbar bg-white border-b drop-shadow-md sticky top-0">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -81,8 +60,6 @@ export default function Navbar() {
         </ul>
       </div>
       <div className="navbar-end"></div>
-    </nav>
+    </div>
   );
-};
-
-
+}

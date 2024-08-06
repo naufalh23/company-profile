@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import CopyrightBot from "./components/copyright";
+import NavbarFirst from "./components/navbar3";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,13 +19,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body className={inter.className}>
-        <Navbar />
+        <NavbarFirst />
+        {/* <Navbar /> */}
         {children}
         <Footer />
         <CopyrightBot />
-        </body>
+      </body>
     </html>
   );
 }
