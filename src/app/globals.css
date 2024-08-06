@@ -9,3 +9,11 @@
 .navbar {
     position: sticky;
 }
+
+.footer-title {
+    opacity: 100%;
+}
+
+.card-body {
+    padding: 32px 16px 16px 16px;
+}

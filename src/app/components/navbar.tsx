@@ -20,8 +20,8 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`navbar border-b drop-shadow-md sticky top-0 ${
-        isSticky ? "bg-white shadow" : "bg-white"
+      className={`navbar border-b drop-shadow-md sticky top-0 z-[9999] ${
+        isSticky ? "bg-white shadow" : "bg-transparent"
       }`}
     >
       <div className="navbar-start">
@@ -44,38 +44,38 @@ export default function Navbar() {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            className="menu menu-sm dropdown-content bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
-            <li>
+            <li className="hover:bg-slate-200 hover:rounded-lg">
               <Link href={"/"}>Home</Link>
             </li>
-            <li>
+            <li className="hover:bg-slate-200 hover:rounded-lg">
               <Link href={"/about"}>About Us</Link>
             </li>
-            <li>
+            <li className="hover:bg-slate-200 hover:rounded-lg">
               <Link href={"/product"}>Product</Link>
             </li>
-            <li>
+            <li className="hover:bg-slate-200 hover:rounded-lg">
               <Link href={"/teams"}>Our Teams</Link>
             </li>
           </ul>
         </div>
         <Link href={"/"} className="btn btn-ghost text-xl">
-          PT PROPs
+          Props
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-          <li>
+          <li className="hover:rounded-lg hover:bg-slate-200">
             <Link href={"/"}>Home</Link>
           </li>
-          <li>
+          <li className="hover:rounded-lg hover:bg-slate-200">
             <Link href={"/about"}>About Us</Link>
           </li>
-          <li>
+          <li className="hover:rounded-lg hover:bg-slate-200">
             <Link href={"/product"}>Product</Link>
           </li>
-          <li>
+          <li className="hover:rounded-lg hover:bg-slate-200">
             <Link href={"/teams"}>Our Teams</Link>
           </li>
         </ul>

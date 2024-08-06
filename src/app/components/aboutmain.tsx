@@ -1,49 +1,28 @@
 export default function AboutMain() {
   return (
-    <div className="flex flex-warp p-5 justify-center items-center">
-      <div className="card bg-base-100 image-full w-96 shadow-xl m-2">
-        <figure>
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-            alt="Shoes"
-          />
-        </figure>
+    <div className="grid grid-cols-2 gap-1 md:flex p-5 justify-center items-center z-0">
+      <div className="card bg-white image-full w-56 h-60 shadow-xl m-2 border border-opacity-70 hover:bg-[#ff4c01] hover:bg-opacity-75">
         <div className="card-body">
-          <h2 className="card-title">Shoes!</h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
-          <div className="card-actions justify-end">
-            <button className="btn btn-primary">Buy Now</button>
-          </div>
+          <h2 className="text-left font-bold text-black">Shoes!</h2>
+          <p className="text-left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, nihil?</p>
         </div>
       </div>
-      <div className="card bg-base-100 image-full w-96 shadow-xl m-2">
-        <figure>
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-            alt="Shoes"
-          />
-        </figure>
+      <div className="card bg-white image-full w-56 h-60 shadow-xl m-2 border border-opacity-70 hover:bg-[#ff4c01] hover:bg-opacity-75">
         <div className="card-body">
-          <h2 className="card-title">Shoes!</h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
-          <div className="card-actions justify-end">
-            <button className="btn btn-primary">Buy Now</button>
-          </div>
+          <h2 className="text-left font-bold text-black">Shoes!</h2>
+          <p className="text-left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, nihil?</p>
         </div>
       </div>
-      <div className="card bg-base-100 image-full w-96 shadow-xl m-2">
-        <figure>
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-            alt="Shoes"
-          />
-        </figure>
+      <div className="card bg-white image-full w-56 h-60 shadow-xl m-2 border border-opacity-70 hover:bg-[#ff4c01] hover:bg-opacity-75">
         <div className="card-body">
-          <h2 className="card-title">Shoes!</h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
-          <div className="card-actions justify-end">
-            <button className="btn btn-primary">Buy Now</button>
-          </div>
+          <h2 className="text-left font-bold text-black">Shoes!</h2>
+          <p className="text-left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, nihil?</p>
+        </div>
+      </div>
+      <div className="card bg-white image-full w-56 h-60 shadow-xl m-2 border border-opacity-70 hover:bg-[#ff4c01] hover:bg-opacity-75">
+        <div className="card-body">
+          <h2 className="text-left font-bold text-black">Shoes!</h2>
+          <p className="text-left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, nihil?</p>
         </div>
       </div>
     </div>
