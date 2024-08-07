@@ -1,6 +1,7 @@
 import AboutMain from "./components/aboutmain";
+import DetailAbout from "./components/detailabout";
 import MainPage from "./components/main";
-import ProjectMain from "./components/projectmain";
+
 
 
 
@@ -9,7 +10,7 @@ export default function Home() {
     <div className="static">
       <MainPage />
       <AboutMain />
-      <ProjectMain />
+      <DetailAbout />
     </div>
   );
 }
