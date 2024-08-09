@@ -20,7 +20,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`navbar border-b drop-shadow-md sticky top-0 z-[9999] ${
+      className={`navbar border-b drop-shadow-md fixed top-0 z-[9999] ${
         isSticky ? "bg-white shadow" : "bg-transparent"
       }`}
     >

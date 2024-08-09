@@ -7,30 +7,29 @@ export default function Footer() {
         <h3 className="footer-title text-black font-bold underline underline-offset-4">
           Props
         </h3>
-        <p className="sm:w-auto max-w-40">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum
-          perspiciatis nam dolore, eum fugiat vitae.
+        <p className="sm:w-auto max-w-48 ">
+        PT Props, pengembang properti terkemuka yang berkomitmen untuk menciptakan hunian berkualitas dan berkelanjutan.
         </p>
       </nav>
       <nav>
         <h6 className="footer-title text-black font-bold underline underline-offset-4">
           Company
         </h6>
-        <Link href={"/"} className="link link-hover">
+        <Link href={"/"} className="link link-hover ">
           Home
         </Link>
-        <Link href={"/about"} className="link link-hover">
+        <Link href={"/about"} className="link link-hover ">
           About Us
         </Link>
-        <Link href={"/product"} className="link link-hover">
+        <Link href={"/product"} className="link link-hover ">
           Product
         </Link>
-        <Link href={"/teams"} className="link link-hover">
+        <Link href={"/teams"} className="link link-hover ">
           Our Teams
         </Link>
       </nav>
       <nav>
-        <h6 className="footer-title">Social</h6>
+        <h6 className="footer-title text-black font-bold underline underline-offset-4">Social</h6>
         <div className="grid grid-flow-col gap-4">
           <Link
             href="https://www.instagram.com"

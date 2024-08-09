@@ -1,30 +1,46 @@
 "use client";
 
 import { Carousel } from "flowbite-react";
+import Image from "next/image";
 
 export default function MainPage() {
   return (
     <div className="h-56 sm:h-64 xl:h-80 2xl:h-96 relative">
       <Carousel pauseOnHover>
-        <img
-          src="https://png.pngtree.com/background/20230319/original/pngtree-city-%E2%80%8B%E2%80%8Bsquare-wide-angle-background-picture-image_2151105.jpg"
+        <Image
+          src="/assets/1.jpg"
           alt="..."
+          height={1080}
+          width={1920}
+          
         />
-        <img
-          src="https://images2.alphacoders.com/593/593292.jpg"
+        <Image
+          src="/assets/2.jpg"
           alt="..."
+          height={1200}
+          width={1920}
+          
         />
-        <img
-          src="https://wallpapersmug.com/download/2048x1152/160db7/high-rise-buildings.jpg"
+        <Image
+          src="/assets/3.jpg"
           alt="..."
+          height={1152}
+          width={2048}
+          
         />
-        <img
-          src="https://c1.wallpaperflare.com/preview/692/156/839/building-skyscraper-light-window.jpg"
+        <Image
+          src="/assets/4.jpg"
           alt="..."
+          height={557}
+          width={910}
+          
         />
-        <img
-          src="https://static.vecteezy.com/system/resources/previews/008/713/420/large_2x/perspective-modern-house-with-terrace-swimming-pool-on-green-forest-view-background-minimal-architecture-design-with-chaise-longue-luxury-facade-and-large-panoramic-windows-3d-rendering-exterior-photo.jpeg"
+        <Image
+          src="/assets/5.jpg"
           alt="..."
+          height={512}
+          width={910}
+          
         />
       </Carousel>
     </div>
