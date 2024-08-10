@@ -1,21 +1,32 @@
-"use client";
+import { CardBlog } from "../components/cardproduct";
+import Wrapper from "../components/wrapper";
+import { getBlogs } from "../lib/contentproduct";
+import { IBlogs } from "../type/contentproduct";
 
-import { Card } from "flowbite-react";
-
-export default function ProductCard() {
+export default async function ProductCard() {
+  const blogs = await getBlogs();
   return (
-    <Card
-      className="max-w-sm my-10"
-      imgAlt="Meaningful alt text for an image that is not purely decorative"
-      imgSrc="https://images2.alphacoders.com/593/593292.jpg"
-    >
-      <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-        Noteworthy technology acquisitions 2021
-      </h5>
-      <p className="font-normal text-gray-700 dark:text-gray-400">
-        Here are the biggest enterprise technology acquisitions of 2021 so far,
-        in reverse chronological order.
-      </p>
-    </Card>
+    <section>
+      <div className="container">
+        <div className="w-screen pt-8 text-center">
+          <h1 className="font-bold underline underline-offset-4 decoration-4 text-3xl">Check Our Project!</h1>
+        </div>
+      </div>
+      <Wrapper>
+        <div className="grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 max-sm:grid-cols-1 gap-2">
+          {blogs.map((items: IBlogs) => {
+            return (
+              <CardBlog
+                key={items.sys.id}
+                title={items.fields.title}
+                slug={items.fields.slug}
+                description={items.fields.description}
+                image={items.fields.photo.fields.file.url}
+              />
+            );
+          })}
+        </div>
+      </Wrapper>
+    </section>
   );
 }

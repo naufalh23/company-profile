@@ -9,16 +9,23 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/contentful-resolve-response": "^0.1.33",
+    "contentful": "^10.13.2",
+    "contentful-resolve-response": "^1.9.0",
+    "embla-carousel-react": "^8.1.8",
     "flowbite-react": "^0.10.1",
     "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",
+    "react-slick": "^0.30.2",
+    "slick-carousel": "^1.8.1",
     "theme-change": "^2.5.0"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/react-slick": "^0.23.13",
     "daisyui": "^4.12.10",
     "eslint": "^8",
     "eslint-config-next": "14.2.5",

@@ -1,17 +1,12 @@
+import CardSlider from '../components/testimonialslider';
 
-"use client";
-
-import { Card } from "flowbite-react";
-
-export function Testimoni() {
+const Home: React.FC = () => {
   return (
-    <Card href="#" className="max-w-sm my-10">
-      <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-        Noteworthy technology acquisitions 2021
-      </h5>
-      <p className="font-normal text-gray-700 dark:text-gray-400">
-        Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
-      </p>
-    </Card>
+    <div className="container w-[80%] mx-auto p-4">
+      <h1 className="font-bold underline underline-offset-4 decoration-4 text-3xl text-center mb-8">Apa Kata Mereka?</h1>
+      <CardSlider />
+    </div>
   );
-}
+};
+
+export default Home;
