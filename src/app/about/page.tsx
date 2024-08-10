@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Wrapper from "../components/wrapper";
 
 export default function AboutUsPage() {
   return (
@@ -19,12 +20,10 @@ export default function AboutUsPage() {
       </div>
       <div className="my-8 mx-8 w-auto">
         <h1 className="text-2xl font-bold mb-4">About Us</h1>
-        <p className="text-lg mb-4">
-          <span className="underline font-bold decoration-[#173B45]">
-            PT Props
-          </span>{" "}
-          berdiri sejak tahun 2001 dengan moto{" "}
-          <span className="underline font-bold decoration-[#173B45]">
+        <p className="text-lg mb-4 text-justify">
+          <span className="font-bold ">PT Props</span> berdiri sejak tahun 2001
+          dengan moto{" "}
+          <span className="font-bold">
             “Membangun Masa Depan, Menginspirasi Kehidupan!”.
           </span>{" "}
           Kami adalah perusahaan yang berkomitmen untuk menciptakan lingkungan
@@ -53,9 +52,53 @@ export default function AboutUsPage() {
           </p>
         </p>
       </div>
+      <Wrapper>
+        <div className="grid grid-cols-1 gap-1 sm:grid-cols-2 md:flex px-5 place-items-center z-0">
+          <div className="card bg-[#F8EDE3] image-full w-56 h-60 shadow-xl m-2 border border-[#C5705D] border-opacity-35 transition ease-in-out delay-150 hover:-translate-y-1 hover:z-[99] hover:scale-110 duration-300 hover:bg-indigo-300 hover:border-4 hover:border-indigo-200">
+            <div className="card-body pt-4 md:pt-8 ">
+              <h2 className="text-center font-bold text-black">Visi</h2>
+              <p className="text-center text-md sm:text-sm">
+                Menjadi pengembang properti terkemuka yang menciptakan hunian
+                berkualitas dan berkelanjutan.
+              </p>
+            </div>
+          </div>
+          <div className="card bg-[#F8EDE3] image-full w-auto h-60 shadow-xl m-2 border border-[#C5705D] border-opacity-35 transition ease-in-out delay-150 hover:-translate-y-1 hover:z-[99] hover:scale-110 duration-300 hover:bg-indigo-300 hover:border-4 hover:border-indigo-200">
+            <div className="card-body pt-4 sm:pt-8">
+              <h2 className="text-center font-bold text-black">Misi</h2>
+              <ul className="list-decimal list-outside px-2">
+                <li className="text-[10px] text-left sm:text-xs md:text-sm">
+                  <span className="font-bold">Kualitas Terbaik: </span>Membangun
+                  properti dengan standar kualitas tinggi.
+                </li>
+                <li className="text-[10px] text-left sm:text-xs md:text-sm">
+                  <span className="font-bold">Inovasi: </span>Mengembangkan
+                  solusi inovatif untuk kebutuhan hunian.
+                </li>
+                <li className="text-[10px] text-left sm:text-xs md:text-sm">
+                  <span className="font-bold">Kepuasan Pelanggan: </span>
+                  Memberikan pelayanan yang memuaskan dan profesional.
+                </li>
+                <li className="text-[10px] text-left sm:text-xs md:text-sm">
+                  <span className="font-bold">Lingkungan Berkelanjutan: </span>
+                  Menerapkan praktik ramah lingkungan dalam setiap proyek.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="card bg-[#F8EDE3] image-full w-56 h-60 shadow-xl m-2 border border-[#C5705D] border-opacity-35 transition ease-in-out delay-150 hover:-translate-y-1 hover:z-[99] hover:scale-110 duration-300 hover:bg-indigo-300 hover:border-4 hover:border-indigo-200">
+            <div className="card-body pt-4 md:pt-8">
+              <h2 className="text-center font-bold text-black">Moto</h2>
+              <p className="text-center text-md">
+                Membangun Masa Depan, Menginspirasi Kehidupan
+              </p>
+            </div>
+          </div>
+        </div>
+      </Wrapper>
       <div className="my-8 mx-8 w-auto">
         <h1 className="text-2xl font-bold mb-4">Our Value</h1>
-        <ul className="list-disc list-inside text-lg">
+        <ul className="list-disc list-inside text-lg text-justify">
           <li>
             <span className="font-bold">Integritas: </span>Kami menjalankan
             bisnis dengan transparansi dan kejujuran.
@@ -69,15 +112,13 @@ export default function AboutUsPage() {
             praktik ramah lingkungan dalam setiap proyek kami.
           </li>
         </ul>
-        <p className="text-xl my-8 text-center ">
-          <span className="underline font-bold decoration-[#173B45]">
-            PT Props
-          </span>{" "}
-          kami percaya bahwa rumah adalah tempat di mana cerita hidup dimulai.
-          Kami berusaha untuk menciptakan ruang yang tidak hanya menjadi tempat
-          tinggal, tetapi juga tempat di mana kenangan indah tercipta. Terima
-          kasih telah mempercayakan kebutuhan properti Anda kepada kami. Kami
-          siap membantu Anda menemukan hunian impian Anda.
+        <p className="text-base my-8 text-center italic">
+          <span className="font-bold ">PT Props</span> kami percaya bahwa rumah
+          adalah tempat di mana cerita hidup dimulai. Kami berusaha untuk
+          menciptakan ruang yang tidak hanya menjadi tempat tinggal, tetapi juga
+          tempat di mana kenangan indah tercipta. Terima kasih telah
+          mempercayakan kebutuhan properti Anda kepada kami. Kami siap membantu
+          Anda menemukan hunian impian Anda.
         </p>
       </div>
     </section>
