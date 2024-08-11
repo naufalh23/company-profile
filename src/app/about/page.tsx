@@ -21,7 +21,7 @@ export default function AboutUsPage() {
       </div>
       <div className="my-8 mx-8 w-auto text-text3">
         <h1 className="text-2xl font-bold mb-4">About Us</h1>
-        <p className="text-lg mb-4 text-justify">
+        <h1 className="text-lg mb-4 text-justify">
           <span className="font-bold ">PT Props</span> berdiri sejak tahun 2001
           dengan moto{" "}
           <span className="font-bold">
@@ -51,7 +51,7 @@ export default function AboutUsPage() {
             berkomitmen untuk terus membangun masa depan yang lebih baik dan
             menginspirasi kehidupan banyak orang melalui karya-karya kami.
           </p>
-        </p>
+        </h1>
       </div>
       <div>
         <AboutMain />
@@ -60,25 +60,25 @@ export default function AboutUsPage() {
         <h1 className="text-2xl font-bold mb-4">Our Value</h1>
         <ul className="list-disc list-inside text-lg text-justify">
           <li>
-            <span className="font-bold text-left">Integritas: </span>Kami menjalankan
-            bisnis dengan transparansi dan kejujuran.
+            <span className="font-bold text-left">Integritas: </span>Kami
+            menjalankan bisnis dengan transparansi dan kejujuran.
           </li>
           <li>
-            <span className="font-bold text-left">Komitmen: </span>Kami berkomitmen untuk
-            memberikan yang terbaik bagi pelanggan dan pemangku kepentingan.
+            <span className="font-bold text-left">Komitmen: </span>Kami
+            berkomitmen untuk memberikan yang terbaik bagi pelanggan dan
+            pemangku kepentingan.
           </li>
           <li>
-            <span className="font-bold text-left">Keberlanjutan: </span>Kami menerapkan
-            praktik ramah lingkungan dalam setiap proyek kami.
+            <span className="font-bold text-left">Keberlanjutan: </span>Kami
+            menerapkan praktik ramah lingkungan dalam setiap proyek kami.
           </li>
         </ul>
         <p className="text-base my-8 text-center italic text-text3">
-          <span className="font-bold text-2xl">"</span>kami percaya bahwa rumah
-          adalah tempat di mana cerita hidup dimulai. Kami berusaha untuk
-          menciptakan ruang yang tidak hanya menjadi tempat tinggal, tetapi juga
-          tempat di mana kenangan indah tercipta. Terima kasih telah
-          mempercayakan kebutuhan properti Anda kepada kami. Kami siap membantu
-          Anda menemukan hunian impian Anda.<span className="font-bold text-2xl">"</span>
+          Kami percaya bahwa rumah adalah tempat di mana cerita hidup dimulai.
+          Kami berusaha untuk menciptakan ruang yang tidak hanya menjadi tempat
+          tinggal, tetapi juga tempat di mana kenangan indah tercipta. Terima
+          kasih telah mempercayakan kebutuhan properti Anda kepada kami. Kami
+          siap membantu Anda menemukan hunian impian Anda.
         </p>
       </div>
     </section>
