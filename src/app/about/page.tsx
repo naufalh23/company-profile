@@ -72,13 +72,13 @@ export default function AboutUsPage() {
             praktik ramah lingkungan dalam setiap proyek kami.
           </li>
         </ul>
-        <p className="text-base my-8 text-center italic">
-          <span className="font-bold ">PT Props</span> kami percaya bahwa rumah
+        <p className="text-base my-8 text-center italic text-text3">
+          <span className="font-bold text-2xl">"</span>kami percaya bahwa rumah
           adalah tempat di mana cerita hidup dimulai. Kami berusaha untuk
           menciptakan ruang yang tidak hanya menjadi tempat tinggal, tetapi juga
           tempat di mana kenangan indah tercipta. Terima kasih telah
           mempercayakan kebutuhan properti Anda kepada kami. Kami siap membantu
-          Anda menemukan hunian impian Anda.
+          Anda menemukan hunian impian Anda.<span className="font-bold text-2xl">"</span>
         </p>
       </div>
     </section>
