@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="footer bg-slate-500 p-10">
+    <footer className="footer bg-bgfoot p-10">
       <nav>
         <h3 className="footer-title text-black font-bold underline underline-offset-4">
           Props

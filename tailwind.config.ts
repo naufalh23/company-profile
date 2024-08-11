@@ -11,7 +11,19 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      
+      colors: {
+        base: '#2F4157',
+        text1: '#DCDAD5',
+        text2: '#577C8F',
+        text3: '#DCD9D2',
+        text4: '#E0D9CF',
+        text5: '#C8D9E6',
+        bgfoot: '#F4EFEB',
+        txfoot: '#567D90',
+        bgcard: '#C7D9E5',
+        butt: '#577C8E',
+
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

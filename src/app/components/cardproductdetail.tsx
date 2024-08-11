@@ -14,7 +14,7 @@ export const CardProduct: React.FC<ICardBlog> = ({
 
 }) => {
   return (
-    <div className="card card-compact bg-base-100 w-96 shadow-xl mx-8 my-4 ">
+    <div className="card card-compact bg-bgcard w-96 shadow-xl mx-8 my-4 ">
       <figure>
         <Image
           src={`https:${image}`}

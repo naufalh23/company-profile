@@ -9,7 +9,7 @@ export default async function ProductCard() {
     <section>
       <div className="container">
         <div className="w-screen pt-8 text-center">
-          <h1 className="font-bold underline underline-offset-4 decoration-4 text-3xl">Check Our Project!</h1>
+          <h1 className="font-bold underline underline-offset-4 decoration-4 text-3xl text-text1">Check Our Project!</h1>
         </div>
       </div>
       <Wrapper>

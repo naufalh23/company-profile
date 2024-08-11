@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Wrapper from "../components/wrapper";
+import AboutMain from "../components/aboutmain";
 
 export default function AboutUsPage() {
   return (
@@ -18,7 +19,7 @@ export default function AboutUsPage() {
           </h1>
         </div>
       </div>
-      <div className="my-8 mx-8 w-auto">
+      <div className="my-8 mx-8 w-auto text-text3">
         <h1 className="text-2xl font-bold mb-4">About Us</h1>
         <p className="text-lg mb-4 text-justify">
           <span className="font-bold ">PT Props</span> berdiri sejak tahun 2001
@@ -52,63 +53,22 @@ export default function AboutUsPage() {
           </p>
         </p>
       </div>
-      <Wrapper>
-        <div className="grid grid-cols-1 gap-1 sm:grid-cols-2 md:flex px-5 place-items-center z-0">
-          <div className="card bg-[#F8EDE3] image-full w-56 h-60 shadow-xl m-2 border border-[#C5705D] border-opacity-35 transition ease-in-out delay-150 hover:-translate-y-1 hover:z-[99] hover:scale-110 duration-300 hover:bg-indigo-300 hover:border-4 hover:border-indigo-200">
-            <div className="card-body pt-4 md:pt-8 ">
-              <h2 className="text-center font-bold text-black">Visi</h2>
-              <p className="text-center text-md sm:text-sm">
-                Menjadi pengembang properti terkemuka yang menciptakan hunian
-                berkualitas dan berkelanjutan.
-              </p>
-            </div>
-          </div>
-          <div className="card bg-[#F8EDE3] image-full w-auto h-60 shadow-xl m-2 border border-[#C5705D] border-opacity-35 transition ease-in-out delay-150 hover:-translate-y-1 hover:z-[99] hover:scale-110 duration-300 hover:bg-indigo-300 hover:border-4 hover:border-indigo-200">
-            <div className="card-body pt-4 sm:pt-8">
-              <h2 className="text-center font-bold text-black">Misi</h2>
-              <ul className="list-decimal list-outside px-2">
-                <li className="text-[10px] text-left sm:text-xs md:text-sm">
-                  <span className="font-bold">Kualitas Terbaik: </span>Membangun
-                  properti dengan standar kualitas tinggi.
-                </li>
-                <li className="text-[10px] text-left sm:text-xs md:text-sm">
-                  <span className="font-bold">Inovasi: </span>Mengembangkan
-                  solusi inovatif untuk kebutuhan hunian.
-                </li>
-                <li className="text-[10px] text-left sm:text-xs md:text-sm">
-                  <span className="font-bold">Kepuasan Pelanggan: </span>
-                  Memberikan pelayanan yang memuaskan dan profesional.
-                </li>
-                <li className="text-[10px] text-left sm:text-xs md:text-sm">
-                  <span className="font-bold">Lingkungan Berkelanjutan: </span>
-                  Menerapkan praktik ramah lingkungan dalam setiap proyek.
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="card bg-[#F8EDE3] image-full w-56 h-60 shadow-xl m-2 border border-[#C5705D] border-opacity-35 transition ease-in-out delay-150 hover:-translate-y-1 hover:z-[99] hover:scale-110 duration-300 hover:bg-indigo-300 hover:border-4 hover:border-indigo-200">
-            <div className="card-body pt-4 md:pt-8">
-              <h2 className="text-center font-bold text-black">Moto</h2>
-              <p className="text-center text-md">
-                Membangun Masa Depan, Menginspirasi Kehidupan
-              </p>
-            </div>
-          </div>
-        </div>
-      </Wrapper>
-      <div className="my-8 mx-8 w-auto">
+      <div>
+        <AboutMain />
+      </div>
+      <div className="my-8 mx-8 w-auto text-text3">
         <h1 className="text-2xl font-bold mb-4">Our Value</h1>
         <ul className="list-disc list-inside text-lg text-justify">
           <li>
-            <span className="font-bold">Integritas: </span>Kami menjalankan
+            <span className="font-bold text-left">Integritas: </span>Kami menjalankan
             bisnis dengan transparansi dan kejujuran.
           </li>
           <li>
-            <span className="font-bold">Komitmen: </span>Kami berkomitmen untuk
+            <span className="font-bold text-left">Komitmen: </span>Kami berkomitmen untuk
             memberikan yang terbaik bagi pelanggan dan pemangku kepentingan.
           </li>
           <li>
-            <span className="font-bold">Keberlanjutan: </span>Kami menerapkan
+            <span className="font-bold text-left">Keberlanjutan: </span>Kami menerapkan
             praktik ramah lingkungan dalam setiap proyek kami.
           </li>
         </ul>

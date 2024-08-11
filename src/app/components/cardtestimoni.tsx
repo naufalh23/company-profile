@@ -7,10 +7,10 @@ interface CardProps {
 
 const CardTesti: React.FC<CardProps> = ({ nama, description}) => {
   return (
-    <div className="bg-white shadow-md rounded-lg overflow-hidden">
+    <div className="bg-bgcard shadow-md rounded-lg overflow-hidden">
       <div className="p-4">
-        <h2 className="text-xl font-bold text-center">{nama}</h2>
-        <p className="mt-2 text-gray-600 text-center">{description}</p>
+        <h2 className="text-xl text-text2 underline font-bold text-center">{nama}</h2>
+        <p className="mt-2 text-text2 text-center">{description}</p>
       </div>
     </div>
   );
